@@ -5,7 +5,7 @@ import java.util.Date;
 public class Tecnico extends Persona {
     private String especialidad;
     
-    public Tecnico(int id, String nombre, String telefono, String especialidad) {
+    public Tecnico(long id, String nombre, String telefono, String especialidad) {
         super(id, nombre, telefono);
         this.especialidad = especialidad;
     }
@@ -43,5 +43,4 @@ public class Tecnico extends Persona {
         return String.format("ID: %d | Nombre: %s | Teléfono: %d | Especialidad: %s",
                 id, nombre, telefono, especialidad);
     }
-    
 }

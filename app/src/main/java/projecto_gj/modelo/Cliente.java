@@ -7,7 +7,7 @@ public class Cliente extends Persona {
     private TipoCliente tipo;
     
     public Cliente(String direccion, TipoCliente tipo, String identificacion, String nombre, String telefono) {
-        super(Integer.parseInt(identificacion), nombre, telefono);
+        super(Long.parseLong(identificacion), nombre, telefono);  // Cambiado a Long.parseLong
         this.direccion = direccion;
         this.tipo = tipo;
     }

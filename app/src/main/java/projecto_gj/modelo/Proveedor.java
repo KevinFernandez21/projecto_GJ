@@ -1,9 +1,9 @@
 package projecto_gj.modelo;
 
 public class Proveedor extends Persona {
-     private String descripcion;
+    private String descripcion;
     
-    public Proveedor(String descripcion, int id, String nombre, String telefono) {
+    public Proveedor(String descripcion, long id, String nombre, String telefono) {
         super(id, nombre, telefono);
         this.descripcion = descripcion;
     }
