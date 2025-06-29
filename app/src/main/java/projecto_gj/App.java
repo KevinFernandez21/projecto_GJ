@@ -3,12 +3,13 @@
  */
 package projecto_gj;
 
+import projecto_gj.sistema.Sistema;
+
 public class App {
-    public String getGreeting() {
-        return "Hello World!";
-    }
 
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+        Sistema.inicializarApp();
+        Sistema.mostrarMenu();
     }
 }
+
